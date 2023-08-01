@@ -36,7 +36,7 @@ public class OrderRestControllerTest extends MyRestDoc {
 
         // when
         ResultActions resultActions = mvc.perform(
-                post("/orders")
+                post("/orders/save")
                         .contentType(MediaType.APPLICATION_JSON_VALUE)
         );
 
@@ -60,11 +60,11 @@ public class OrderRestControllerTest extends MyRestDoc {
 
         // when
         ResultActions resultActions = mvc.perform(
-                post("/orders")
+                post("/orders/save")
                         .contentType(MediaType.APPLICATION_JSON_VALUE)
         );
         ResultActions resultActions2 = mvc.perform(
-                post("/orders")
+                post("/orders/save")
                         .contentType(MediaType.APPLICATION_JSON_VALUE)
         );
         String responseBody2 = resultActions.andReturn().getResponse().getContentAsString();
