@@ -103,7 +103,7 @@ public class CartService {
         }
 
         if (requestDTOs.isEmpty()){
-            throw new Exception400("추가하려는 장바구니의 내용이 비었습니다.");
+            throw new Exception400("업데이트하려는 장바구니의 내용이 비었습니다.");
         }
         // 장바구니 업데이트
         for (Cart cart : cartList) {
